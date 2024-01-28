@@ -18,7 +18,7 @@ const App = () => {
 				setEmpData(res.data);
 				setShowData(res.data.slice(0, 10));
 			} catch (err) {
-				console.log("Data Fetch Failed: ", err);
+				alert("failed to fetch data");
 			}
 		};
 		fetchData();
